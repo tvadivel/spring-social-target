@@ -16,19 +16,21 @@
 
 package org.springframework.social.target.api;
 
-import org.springframework.social.ApiBinding;
-import org.springframework.social.target.api.impl.TargetTemplate;
+import org.springframework.social.ApiException;
+import org.springframework.social.MissingAuthorizationException;
 
 /**
- * Interface specifying a basic set of operations for interacting with Target
- * APIs. Implemented by {@link TargetTemplate}.
- *
+ * Interface defining the operations for products
  * @author Bobby Warner
  */
-public interface Target extends ApiBinding {
+public interface ProductOperations {
 	
 	/**
-	 * Returns the portion of the Target API containing the product operations.
+	 * Provides a listing of product categories and sub-categories.
+	 * @param catalogId the ID of the catalog
+	 * @return A list of category IDs
+	 * @throws ApiException if there is an error while communicating with Target.
+	 * @throws MissingAuthorizationException if TargetTemplate was not created with API key.
 	 */
-	ProductOperations productOperations();
+	CursoredList<Long> category(int categoryId);
 }

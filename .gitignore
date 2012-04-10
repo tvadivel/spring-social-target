@@ -8,5 +8,5 @@
 **/.settings
 **/bin
 **/build
-build
-target
+/build
+/target
