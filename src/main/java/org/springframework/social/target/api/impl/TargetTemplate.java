@@ -18,6 +18,7 @@ package org.springframework.social.target.api.impl;
 
 import org.springframework.social.oauth2.AbstractOAuth2ApiBinding;
 import org.springframework.social.oauth2.OAuth2Version;
+import org.springframework.social.target.api.Target;
 
 /**
  * <p>
