@@ -1,4 +1,4 @@
 Spring Social Target
 ====================
 
-Target Java API binding
+Spring Social Target is a Java library for using Target's Enterprise Services.
