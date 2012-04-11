@@ -16,10 +16,6 @@
 
 package org.springframework.social.target.api;
 
-/**
- * Interface defining the operations for lists
- * @author Bobby Warner
- */
-public interface ListOperations {
-	
+public class Item {
+
 }

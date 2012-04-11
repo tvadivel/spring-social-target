@@ -28,27 +28,22 @@ import org.springframework.social.target.api.impl.TargetTemplate;
 public interface Target extends ApiBinding {
 	
 	/**
-	 * Returns the portion of the Target API containing the catalog operations.
+	 * Returns the portion of the Target API containing the product operations.
 	 */
-	CatalogOperations catalogOperations();
+	ProductOperations productOperations();
 	
 	/**
-	 * Returns the portion of the Target API containing the item operations.
+	 * Returns the portion of the Target API containing the list and registry operations.
 	 */
-	ItemOperations itemOperations();
+	ListAndRegistryOperations listAndRegistryOperations();
 	
 	/**
-	 * Returns the portion of the Target API containing the list operations.
-	 */
-	ListOperations listOperations();
-	
-	/**
-	 * Returns the portion of the Target API containing the catalog operations.
+	 * Returns the portion of the Target API containing the location operations.
 	 */
 	LocationOperations locationOperations();
 	
 	/**
-	 * Returns the portion of the Target API containing the catalog operations.
+	 * Returns the portion of the Target API containing the store operations.
 	 */
 	StoreOperations storeOperations();
 }

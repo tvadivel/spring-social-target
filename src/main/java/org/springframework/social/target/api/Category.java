@@ -16,10 +16,6 @@
 
 package org.springframework.social.target.api;
 
-/**
- * Interface defining the operations for items
- * @author Bobby Warner
- */
-public interface ItemOperations {
-	
+public class Category {
+
 }
