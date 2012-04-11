@@ -16,21 +16,10 @@
 
 package org.springframework.social.target.api;
 
-import org.springframework.social.ApiException;
-import org.springframework.social.MissingAuthorizationException;
-
 /**
- * Interface defining the operations for products
+ * Interface defining the operations for items
  * @author Bobby Warner
  */
-public interface ProductOperations {
+public interface ItemOperations {
 	
-	/**
-	 * Provides a listing of product categories and sub-categories.
-	 * @param catalogId the ID of the catalog
-	 * @return A list of category IDs
-	 * @throws ApiException if there is an error while communicating with Target.
-	 * @throws MissingAuthorizationException if TargetTemplate was not created with API key.
-	 */
-	CursoredList<Long> category(int categoryId);
 }
