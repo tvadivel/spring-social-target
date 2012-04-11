@@ -16,6 +16,6 @@
 
 package org.springframework.social.target.api;
 
-public class Item {
+public class Product {
 
 }

@@ -33,20 +33,20 @@ public interface ProductOperations {
 	List<Category> getCatalog(String catalogId);
 	
 	/**
-	 * Display a list of catalog items tied to a category ID.
+	 * Display a list of catalog products tied to a category ID.
 	 * @param categoryId the ID of the category
-	 * @return a list of {@link Item}s for the specified category
+	 * @return a list of {@link Product}s for the specified category
 	 * @throws ApiException if there is an error while communicating with Target.
 	 */
-	List<Item> getItems(String categoryId);
+	List<Product> getProducts(String categoryId);
 	
 	/**
 	 * Retrieve product details by product ID.
-	 * @param itemId the ID of the item
-	 * @return the requested {@link Item}
+	 * @param productId the ID of the product
+	 * @return the requested {@link Product}
 	 * @throws ApiException if there is an error while communicating with Target.
 	 */
-	Item getItem(String itemId);
+	Product getProduct(String productId);
 	
 	/**
 	 * Retrieves products that satisfy the search criteria, including one or more 
@@ -63,8 +63,8 @@ public interface ProductOperations {
 	 * @param count the number of results to be returned.
 	 * @param maxPrice the maximum price of the items to be returned.
 	 * @param minPrice the minimum price of the items to be returned.
-	 * @return a list of {@link Item}s for the specified search parameters
+	 * @return a list of {@link Product}s for the specified search parameters
 	 * @throws ApiException if there is an error while communicating with Target.
 	 */
-	List<Item> search(String keyword, String browseNode, int pageNumber, String sort, List<String> responseGroups, int count, int maxPrice, int minPrice);
+	List<Product> search(String keyword, String browseNode, int pageNumber, String sort, List<String> responseGroups, int count, int maxPrice, int minPrice);
 }
