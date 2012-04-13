@@ -26,6 +26,7 @@ import org.springframework.social.target.api.Target;
  * </p>
  * @author Bobby Warner
  */
-public class TargetTemplate extends AbstractOAuth2ApiBinding implements Target {
+//public class TargetTemplate extends AbstractOAuth2ApiBinding implements Target {
+public class TargetTemplate {
 
 }
