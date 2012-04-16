@@ -22,28 +22,29 @@ import org.springframework.social.target.api.impl.TargetTemplate;
 /**
  * Interface specifying a basic set of operations for interacting with Target
  * APIs. Implemented by {@link TargetTemplate}.
- *
+ * 
  * @author Bobby Warner
  */
 public interface Target extends ApiBinding {
-	
-	/**
-	 * Returns the portion of the Target API containing the product operations.
-	 */
-	ProductOperations productOperations();
-	
-	/**
-	 * Returns the portion of the Target API containing the list and registry operations.
-	 */
-	ListAndRegistryOperations listAndRegistryOperations();
-	
-	/**
-	 * Returns the portion of the Target API containing the location operations.
-	 */
-	LocationOperations locationOperations();
-	
-	/**
-	 * Returns the portion of the Target API containing the store operations.
-	 */
-	StoreOperations storeOperations();
+
+    /**
+     * Returns the portion of the Target API containing the product operations.
+     */
+    ProductOperations productOperations();
+
+    /**
+     * Returns the portion of the Target API containing the list and registry
+     * operations.
+     */
+    ListAndRegistryOperations listAndRegistryOperations();
+
+    /**
+     * Returns the portion of the Target API containing the location operations.
+     */
+    LocationOperations locationOperations();
+
+    /**
+     * Returns the portion of the Target API containing the store operations.
+     */
+    StoreOperations storeOperations();
 }

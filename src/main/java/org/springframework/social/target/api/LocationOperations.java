@@ -18,8 +18,9 @@ package org.springframework.social.target.api;
 
 /**
  * Interface defining the operations for location
+ * 
  * @author Bobby Warner
  */
 public interface LocationOperations {
-	
+
 }

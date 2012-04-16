@@ -21,53 +21,57 @@ import java.util.Collection;
 
 /**
  * List that includes previous and next cursors for paging through items.
+ * 
  * @author Bobby Warner
- * @param <T> the list element type
+ * @param <T>
+ *            the list element type
  */
 @SuppressWarnings("serial")
 public class CursoredList<T> extends ArrayList<T> {
 
-	private final long previousCursor;
+    private final long previousCursor;
 
-	private final long nextCursor;
+    private final long nextCursor;
 
-	public CursoredList(Collection<? extends T> collection, long previousCursor, long nextCursor) {
-		super(collection);
-		this.previousCursor = previousCursor;
-		this.nextCursor = nextCursor;
-	}
+    public CursoredList(Collection<? extends T> collection,
+            long previousCursor, long nextCursor) {
+        super(collection);
+        this.previousCursor = previousCursor;
+        this.nextCursor = nextCursor;
+    }
 
-	public CursoredList(int initialCapacity, long previousCursor, long nextCursor) {
-		super(initialCapacity);
-		this.previousCursor = previousCursor;
-		this.nextCursor = nextCursor;
-	}
+    public CursoredList(int initialCapacity, long previousCursor,
+            long nextCursor) {
+        super(initialCapacity);
+        this.previousCursor = previousCursor;
+        this.nextCursor = nextCursor;
+    }
 
-	/**
-	 * The cursor to retrieve the previous page of results.
-	 */
-	public long getPreviousCursor() {
-		return previousCursor;
-	}
+    /**
+     * The cursor to retrieve the previous page of results.
+     */
+    public long getPreviousCursor() {
+        return previousCursor;
+    }
 
-	/**
-	 * The cursor to retrieve the next page of results.
-	 */
-	public long getNextCursor() {
-		return nextCursor;
-	}
+    /**
+     * The cursor to retrieve the next page of results.
+     */
+    public long getNextCursor() {
+        return nextCursor;
+    }
 
-	/**
-	 * Returns true if there is a previous page of results.
-	 */
-	public boolean hasPrevious() {
-		return previousCursor > 0;
-	}
+    /**
+     * Returns true if there is a previous page of results.
+     */
+    public boolean hasPrevious() {
+        return previousCursor > 0;
+    }
 
-	/**
-	 * Returns true if there is a next page of results.
-	 */
-	public boolean hasNext() {
-		return nextCursor > 0;
-	}
+    /**
+     * Returns true if there is a next page of results.
+     */
+    public boolean hasNext() {
+        return nextCursor > 0;
+    }
 }
